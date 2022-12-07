@@ -14,8 +14,8 @@ require APPROOT . '/views/inc/header.php';
 <div class="row">
     <div class="col-md-6 mx-auto">
         <div class="card card-body bg-light mt-5">
-            <h2>Create An Account</h2>
-            <p>Please fill out this form to register with us</p>
+            <h2>Create An Admin Account</h2>
+            <p>Please fill out this form to register</p>
             <form action="<?php echo URLROOT; ?>/users/register" method="post">
                 <div class="form-group">
                     <label for="name">Name: <sup>*</sup></label>
