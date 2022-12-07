@@ -98,7 +98,7 @@ class Database
      *
      * @return void
      */
-    public function bind($param, $value, $type)
+    public function bind($param, $value, $type = null)
     {
         if (is_null($type)) {
             switch ($value) {
@@ -142,7 +142,7 @@ class Database
     /**
      * Get single record as object
      *
-     * @return void
+     * @return object
      */
     public function single()
     {

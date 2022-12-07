@@ -37,19 +37,27 @@ class Pages extends Controller
     public function index()
     {
         $data = [
-            'title' => 'Welcome'
+            'title' => 'Sigcorp Teste',
+			'description' => 'Teste para candidatos à vaga de Desenvolvedor PHP'
         ];
         $this->view('pages/index', $data);
     }
 
-    /**
-     * About method
-     *
-     * @return void
-     */
-    public function about()
+	public function clients()
     {
-        $data = ['title' => 'About'];
-        $this->view('pages/about', $data);
-    }
+		$data = [
+			'title' => 'Clients',
+			'description' => ''
+		];
+		$this->view('clients/index', $data);
+	}
+	
+	public function orders()
+    {
+		$data = [
+			'title' => 'Orders',
+			'description' => ''
+		];
+		$this->view('orders/index', $data);
+	}
 }

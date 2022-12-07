@@ -20,7 +20,7 @@ define('DB_NAME', 'sigcorp_test');
 define('APPROOT', dirname(dirname(__FILE__)));
 
 // URL Root
-define('URLROOT', 'http://sigcorp.test/');
+define('URLROOT', 'http://localhost/sigcorp');
 
 // App Name
-define('APPNAME', 'Sigcorp Test');
+define('APPNAME', 'Sigcorp');
