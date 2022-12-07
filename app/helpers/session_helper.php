@@ -46,3 +46,17 @@ function flash($name = '', $message = '', $class = 'alert alert-success')
 		}
 	}
 }
+
+/**
+ * Verify if user is logged in
+ * 
+ * @return boolean
+ */
+function isLoggedIn()
+{
+	if (isset($_SESSION['user_id'])) {
+		return true;
+	} else {
+		return false;
+	}
+}
