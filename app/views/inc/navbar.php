@@ -9,11 +9,11 @@
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo URLROOT; ?>">
-                        Home</a>
-                </li>
 				<?php if (isset($_SESSION['user_id'])) : ?>
+					<li class="nav-item">
+						<a class="nav-link" href="<?php echo URLROOT; ?>/dashboard">
+							Dashboard</a>
+					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="<?php echo URLROOT; ?>/pages/clients">Clients</a>
 					</li>
