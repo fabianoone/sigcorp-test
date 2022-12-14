@@ -25,9 +25,9 @@ class User
 	/**
 	 * Database private variable
 	 * 
-	 * @var [type]
+	 * @var Database [type]
 	 */
-	private $_db;
+    private Database $_db;
 
 	/**
 	 * Constructor method
@@ -42,7 +42,7 @@ class User
 	 * 
 	 * @param [type] $data
 	 * 
-	 * @return void
+	 * @return boolean
 	 */
 	public function register($data)
 	{
@@ -88,7 +88,7 @@ class User
 	 * 
 	 * @param [type] $email
 	 * 
-	 * @return void
+	 * @return bool
 	 */
 	public function findUserByEmail($email)
 	{
@@ -110,7 +110,7 @@ class User
 	 * 
 	 * @param [type] $id
 	 * 
-	 * @return void
+	 * @return object
 	 */
 	public function getUserById($id)
 	{
@@ -118,7 +118,6 @@ class User
 		// Bind value
 		$this->_db->bind(':id', $id);
 
-		$row = $this->_db->single();
-		return $row;
+        return $this->_db->single();
 	}
 }

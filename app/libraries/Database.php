@@ -31,25 +31,25 @@ class Database
      *
      * @var [type]
      */
-    private $_host = DB_HOST;
+    private string $_host = DB_HOST;
     /**
      * Use database user defined in config file
      *
      * @var [type]
      */
-    private $_user = DB_USER;
+    private string $_user = DB_USER;
     /**
      * Use database password defined in config file
      *
      * @var [type]
      */
-    private $_pass = DB_PASS;
+    private string $_pass = DB_PASS;
     /**
      * Use database name defined in config file
      *
      * @var [type]
      */
-    private $_dbname = DB_NAME;
+    private string $_dbname = DB_NAME;
 
     private $_dbh;
     private $_stmt;

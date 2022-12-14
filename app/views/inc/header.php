@@ -15,7 +15,7 @@
   crossorigin="anonymous"
   referrerpolicy="no-referrer" 
   />
-  <link rel="stylesheet" href="<?php echo URLROOT; ?>/public/css/style.css">
+  <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/style.css">
   <!-- avoid favicon 404 error -->
   <link rel="shortcut icon" href="#">
   <title><?php echo APPNAME; ?></title>

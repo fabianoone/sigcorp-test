@@ -31,7 +31,7 @@ class Dashboard extends Controller
 			redirect('users/login');
 		}
 
-		// Load neccessary models
+		// Load necessary models
     }
 
     /**

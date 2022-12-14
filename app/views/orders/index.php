@@ -11,11 +11,12 @@
  */
 require_once APPROOT . '/views/inc/header.php'; ?>
 
-<div class="jumbotron jubotron-fluid text-center">
-  <div class="container">
-    <h1 class="display-3"><?php echo $data['title']; ?></h1>
-    <p class="lead"><?php echo $data['description']; ?></p>
-  </div>
+<div class="d-flex align-items-center p-3 my-3 bg-light text-dark rounded box-shadow">
+    <img class="mr-3" src="<?php echo URLROOT; ?>/public/image/esfera_sigcorp.png" alt="" width="48" height="48">
+    <div class="lh-100">
+        <h6 class="mb-0 lh-100"><?php echo $data['title']; ?></h6>
+        <small><?php echo $data['description']; ?></small>
+    </div>
 </div>
 
 <?php require_once APPROOT . '/views/inc/footer.php'; ?>

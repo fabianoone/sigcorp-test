@@ -22,8 +22,13 @@
  */
 class Users extends Controller 
 {
-	/**
-	 * Contructor method
+    /**
+     * @var void
+     */
+    private $userModel;
+
+    /**
+	 * Constructor method
 	 */
 	public function __construct()
 	{
